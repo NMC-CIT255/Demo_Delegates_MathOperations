@@ -25,8 +25,8 @@ namespace Demo_Delegates_MathOperations
             MathOperation myMathOperation;
             Operation operationChoice;
 
-            double myNumber1;
-            double myNumber2;
+            double operand1;
+            double operand2;
 
             Dictionary<Operation, MathOperation> operationsDictionary = new Dictionary<Operation, MathOperation> 
             {
@@ -52,12 +52,12 @@ namespace Demo_Delegates_MathOperations
             }
 
             Console.Write("Enter the first number: ");
-            myNumber1 = double.Parse(Console.ReadLine());
+            operand1 = double.Parse(Console.ReadLine());
 
             Console.Write("Enter the second number: ");
-            myNumber2 = double.Parse(Console.ReadLine());
+            operand2 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("The answer is: {0}", myMathOperation(myNumber1, myNumber2));
+            Console.WriteLine("The answer is: {0}", myMathOperation(operand1, operand2));
 
             Console.Write("Press any key to continue.");
             Console.ReadKey();
